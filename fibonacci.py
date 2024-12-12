@@ -1,4 +1,5 @@
 # fibonacci.py
+# fibonacci.py
 
 def fibonacci(n):
     fib_sequence = [0, 1]
@@ -6,6 +7,9 @@ def fibonacci(n):
         fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
     return fib_sequence
 
-if __name__ == "__main__":
-    n = int(input("Enter the number of Fibonacci numbers to generate: "))
-    print(fibonacci(n))
+# Set a predefined number of terms for the Fibonacci sequence
+n = 10  # You can change this number to generate more or fewer Fibonacci numbers
+
+# Generate and print the Fibonacci sequence
+print(fibonacci(n))
+
